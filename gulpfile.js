@@ -22,6 +22,11 @@ function images() {
     .pipe(gulp.dest("dist/images"));
 }
 
+function clean() {
+  return del("dist");
+}
+
 exports.html = html;
 exports.css = css;
 exports.images = images;
+exports.clean = clean;
