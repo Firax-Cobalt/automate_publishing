@@ -26,7 +26,10 @@ function clean() {
   return del("dist");
 }
 
+const build = gulp.series(clean, gulp.parallel(html, css, images));
+
 exports.html = html;
 exports.css = css;
 exports.images = images;
 exports.clean = clean;
+exports.build = build;
