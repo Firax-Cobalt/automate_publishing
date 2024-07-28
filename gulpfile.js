@@ -56,3 +56,4 @@ exports.clean = clean;
 
 exports.build = build;
 exports.watchapp = watchapp;
+exports.default = watchapp;
